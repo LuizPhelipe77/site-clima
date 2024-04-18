@@ -15,7 +15,7 @@ console.log(dados)
 }
  // async = funcao que avisa que vai acessar um servidor
 async function buscarCidade(cidade) {
-    let dados = await fetch ("https://api.openweathermap.org/data/2.5/weather?q=" + cidade + "&appid=cebcd482eda57fa9a6714c1c2ba91885&units=metric&lang=pt-br").then((resposta) => resposta.json())
+    let dados = await fetch ("https://api.openweathermap.org/data/2.5/weather?q=" + cidade + "&appid=cebcd482eda57fa9a6714c1c2ba91885&units=metric&lang=pt_br").then((resposta) => resposta.json())
 
     colocarNaTela(dados)
 }
